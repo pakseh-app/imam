@@ -10,14 +10,14 @@ window.INVITATION_DATA = {
     // PENGANTIN
     // ─────────────────────────────────────────────────────
     bride: {
-        name: 'juliet',
+        name: 'Lusiyana',
         parents: 'Putri dari Bpk. Hendra Prameswari & Ibu Ratna Dewi',
         address: 'Alamat kediaman mempelai',
         instagram: '#'
     },
 
     groom: {
-        name: 'romeo',
+        name: 'Imam Khanafi',
         parents: 'Putra dari Bpk. Nama Ayah & Ibu Nama Ibu',
         address: 'Alamat kediaman mempelai',
         instagram: '#'
@@ -60,5 +60,5 @@ window.INVITATION_DATA = {
     // ─────────────────────────────────────────────────────
     // JUDUL BROWSER
     // ─────────────────────────────────────────────────────
-    pageTitle: 'juliet & romeo'
+    pageTitle: 'Lusiyana & Imam Khanafi'
 };

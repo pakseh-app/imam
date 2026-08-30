@@ -1,5 +1,5 @@
 /* =====================================================
-   juliet & romeo — MAIN CONTROLLER
+   Lusiyana & Imam Khanafi — MAIN CONTROLLER
 ===================================================== */
 (function () {
     'use strict';
