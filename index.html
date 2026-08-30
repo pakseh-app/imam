@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>juliet & romeo</title>
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=DM+Sans:wght@400;500;600;700&family=Patrick+Hand&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <script src="data.js"></script>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     AUDIO
+===================================================== -->
+
+<audio
+    id="backgroundMusic"
+    data-src="assets/music.mp3"
+    loop
+    preload="none"
+></audio>
+
+
+<!-- =====================================================
+     HALAMAN PEMBUKA
+===================================================== -->
+
+<main
+    class="opening-page"
+    id="openingPage"
+>
+
+
+    <!-- BUNGA KIRI ATAS -->
+
+    <div class="doodle-flower flower-top-left">
+
+        <span class="petal p1"></span>
+        <span class="petal p2"></span>
+        <span class="petal p3"></span>
+        <span class="petal p4"></span>
+        <span class="petal p5"></span>
+
+    </div>
+
+
+    <!-- SPARKLE -->
+
+    <div class="sparkle sparkle-one">
+        ✦
+    </div>
+
+
+    <!-- CONTENT -->
+
+    <div class="content">
+
+
+        <div class="small-title">
+            KAMI MAU NIKAH!
+        </div>
+
+
+        <h1 class="couple-name">
+
+            <span>juliet</span>
+
+            <strong>&amp;</strong>
+
+            <span>romeo</span>
+
+        </h1>
+
+
+        <!-- TAMU -->
+
+        <div class="guest-box">
+
+            <div class="guest-label">
+                Kepada Yth.
+            </div>
+
+            <div class="guest-name">
+                Tamu Tersayang
+            </div>
+
+        </div>
+
+
+        <!-- TOMBOL BUKA -->
+
+        <button
+            class="open-button"
+            id="openInvitation"
+            type="button"
+        >
+
+            <span class="heart">
+                ♥
+            </span>
+
+            <span>
+                BUKA UNDANGAN
+            </span>
+
+        </button>
+
+
+        <div class="music-note">
+            ada musik pengiringnya, nyalakan suaramu
+        </div>
+
+    </div>
+
+
+    <!-- BUNGA KECIL -->
+
+    <div class="small-pink-flower">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <i></i>
+
+    </div>
+
+
+    <!-- BUNGA KANAN BAWAH -->
+
+    <div class="doodle-flower flower-bottom-right">
+
+        <span class="petal p1"></span>
+        <span class="petal p2"></span>
+        <span class="petal p3"></span>
+        <span class="petal p4"></span>
+        <span class="petal p5"></span>
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     ISI UNDANGAN
+===================================================== -->
+
+<div
+    class="invitation"
+    id="invitation"
+>
+
+
+    <!-- =================================================
+         HOME
+    ================================================== -->
+
+    <section
+        class="section home-section"
+        id="home"
+    >
+
+
+        <!-- DEKORASI -->
+
+        <div class="floating-flower flower-home">
+            ✿
+        </div>
+
+
+        <div class="home-sparkle sparkle-a">
+            ✦
+        </div>
+
+
+        <div class="home-sparkle sparkle-b">
+            ✦
+        </div>
+
+
+        <div class="home-content">
+
+
+            <h2 class="section-title">
+                PERNIKAHAN!
+            </h2>
+
+
+            <!-- FOTO POLAROID PENGANTIN -->
+            <div class="polaroid-couple-wrapper">
+                <div class="polaroid-card polaroid-pria">
+                    <div class="polaroid-photo">
+                        <img src="assets/foto-pria.jpg" alt="Foto Pengantin Pria" loading="lazy" decoding="async">
+                    </div>
+                    <div class="polaroid-caption">romeo</div>
+                </div>
+
+                <div class="polaroid-heart">♥</div>
+
+                <div class="polaroid-card polaroid-wanita">
+                    <div class="polaroid-photo">
+                        <img src="assets/foto-wanita.jpg" alt="Foto Pengantin Wanita" loading="lazy" decoding="async">
+                    </div>
+                    <div class="polaroid-caption">juliet</div>
+                </div>
+            </div>
+
+            <!-- NAMA PENGANTIN -->
+            <div class="home-couple-names">
+                <span>juliet</span>
+                <strong>&amp;</strong>
+                <span>romeo</span>
+            </div>
+
+            <div class="home-love-caption">Dua hati, satu cerita, selamanya ♥</div>
+
+            <!-- TANGGAL OTOMATIS -->
+
+            <div
+                class="wedding-date"
+                id="homeWeddingDate"
+            ></div>
+
+
+        </div>
+
+
+        <!-- GARIS GELOMBANG -->
+
+        <div class="wave-line">
+
+            <svg
+                viewBox="0 0 500 60"
+                preserveAspectRatio="none"
+            >
+
+                <path
+                    d="M0 30
+                    C40 5 70 5 110 30
+                    C150 55 180 55 220 30
+                    C260 5 290 5 330 30
+                    C370 55 400 55 440 30
+                    C465 15 480 15 500 25"
+                />
+
+            </svg>
+
+        </div>
+
+
+        <!-- TAMU TERSAYANG -->
+
+        <div class="guest-home">
+
+
+            <h2 class="orange-title">
+                TAMU TERSAYANG!
+            </h2>
+
+
+            <p class="guest-description">
+
+                Sebentar lagi kami menikah —
+                dan rasanya nggak lengkap tanpa
+                orang-orang tersayang.
+
+                Jadi tolong kosongkan tanggalnya ya,
+                kami tunggu di hari bahagia kami!
+
+            </p>
+
+
+            <div class="guest-floating-heart">
+                ♥
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+         ACARA
+    ================================================== -->
+
+    <section
+        class="section acara-section"
+        id="acara"
+    >
+
+
+        <!-- DEKORASI -->
+
+        <div class="acara-sparkle acara-sparkle-1">
+            ✦
+        </div>
+
+
+        <div class="acara-sparkle acara-sparkle-2">
+            ✦
+        </div>
+
+
+        <div class="acara-flower acara-flower-right">
+            ✿
+        </div>
+
+
+        <div class="acara-content">
+
+
+            <!-- KAPAN -->
+
+            <h2 class="acara-title">
+                KAPAN?
+            </h2>
+
+
+            <!-- TANGGAL PRAKTIS — TIDAK BERGANTUNG KALENDER HP/PC -->
+            <div class="simple-event-date">
+                <div class="simple-event-day">MINGGU</div>
+                <div class="simple-event-number">8</div>
+                <div class="simple-event-month">NOVEMBER 2026</div>
+            </div>
+
+            <!-- TANGGAL OTOMATIS -->
+
+            <p class="acara-date" id="eventDateText" style="display:none"></p>
+
+
+
+            <!-- DI MANA -->
+
+            <h2 class="acara-title lokasi-title">
+                DI MANA?
+            </h2>
+
+
+
+            <!-- AKAD -->
+
+            <div class="event-block">
+
+
+                <h3 class="event-title pink-event">
+                    AKAD NIKAH · 08.00 WIB
+                </h3>
+
+
+                <p class="event-place">
+                    Ballroom Melati
+                </p>
+
+
+                <p class="event-address">
+                    Hotel Ambhara, Jakarta Selatan
+                </p>
+
+
+                <a
+                    class="event-map pink-map"
+                    href="https://www.google.com/maps/search/?api=1&query=Hotel+Ambhara+Jakarta+Selatan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <span>
+                        ⌖
+                    </span>
+
+                    BUKA PETA
+
+                </a>
+
+
+            </div>
+
+
+
+            <!-- RESEPSI -->
+
+            <div class="event-block reception-block">
+
+
+                <h3 class="event-title orange-event">
+                    RESEPSI · 11.00 WIB
+                </h3>
+
+
+                <p class="event-place">
+                    Ballroom Melati
+                </p>
+
+
+                <p class="event-address">
+                    Hotel Ambhara, Jakarta Selatan
+                </p>
+
+
+                <a
+                    class="event-map orange-map"
+                    href="https://www.google.com/maps/search/?api=1&query=Hotel+Ambhara+Jakarta+Selatan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <span>
+                        ⌖
+                    </span>
+
+                    BUKA PETA
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- DEKORASI BAWAH -->
+
+        <div class="acara-flower acara-flower-bottom">
+            ✿
+        </div>
+
+
+        <div class="acara-sparkle acara-sparkle-3">
+            ✦
+        </div>
+
+
+        <!-- =========================================
+     AGENDA ACARA
+========================================== -->
+
+<div class="agenda-section">
+
+    <h2 class="agenda-title">
+        APA AGENDANYA?
+    </h2>
+
+
+    <!-- AKAD -->
+
+    <div class="agenda-item">
+
+        <div class="agenda-time">
+            08.00 WIB
+        </div>
+
+        <div class="agenda-info">
+
+            <div class="agenda-name">
+                akad nikah
+            </div>
+
+            <div class="agenda-description">
+                khidmat &amp; haru — mohon
+                datang tepat waktu
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- RESEPSI -->
+
+    <div class="agenda-item">
+
+        <div class="agenda-time">
+            11.00 WIB
+        </div>
+
+        <div class="agenda-info">
+
+            <div class="agenda-name">
+                resepsi
+            </div>
+
+            <div class="agenda-description">
+                makan enak, ketawa bareng,
+                foto sepuasnya
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CATATAN -->
+
+    <div class="agenda-note">
+
+        <div class="note-star">
+            ✦
+        </div>
+
+        <div>
+            sesudahnya — foto bareng &amp;
+            salam-salaman
+        </div>
+
+    </div>
+
+
+    <div class="agenda-note">
+
+        <div class="note-star">
+            ✦
+        </div>
+
+        <div>
+            jangan buru-buru pulang ya!
+        </div>
+
+    </div>
+
+
+    <!-- DEKORASI GARIS -->
+
+    <div class="agenda-decoration">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+
+    <!-- QUOTE -->
+
+    <div class="agenda-quote">
+
+        <p>
+            Dan la jadikan di antara kalian rasa kasih
+            dan sayang, agar kalian merasa
+            tenteram.
+        </p>
+
+        <div class="agenda-quran">
+            QS AR-RUM : 21
+        </div>
+
+    </div>
+
+
+</div>
+
+<!-- =========================================
+     DUA MANUSIANYA
+========================================== -->
+
+<div class="couple-section couple-stack-section">
+
+    <h2 class="couple-section-title letter-reveal">DUA MANUSIANYA</h2>
+
+    <!-- PENGANTIN WANITA — MUNCUL TERLEBIH DAHULU -->
+    <div class="person-card bride-card couple-person-block">
+        <div class="person-polaroid person-polaroid-bride">
+            <div class="polaroid-back"></div>
+            <div class="paperclip" aria-hidden="true"></div>
+            <div class="polaroid-inner">
+                <div class="person-polaroid-photo">
+                    <img src="assets/foto-wanita.jpg" alt="Foto juliet" loading="lazy" decoding="async">
+                </div>
+                <div class="person-polaroid-name letter-reveal">juliet</div>
+            </div>
+        </div>
+
+        <p class="person-parent">
+            Putri dari Bpk. Hendra Prameswari &amp; Ibu Ratna Dewi
+        </p>
+        <p class="person-address">
+            Alamat kediaman mempelai
+        </p>
+
+        <a href="#" class="instagram-button" target="_blank">
+            ◎ &nbsp; INSTAGRAM
+        </a>
+    </div>
+
+    <!-- PENGANTIN PRIA — BARU MUNCUL SETELAH SCROLL -->
+    <div class="person-card groom-card couple-person-block">
+        <div class="person-polaroid person-polaroid-groom">
+            <div class="polaroid-back"></div>
+            <div class="paperclip" aria-hidden="true"></div>
+            <div class="polaroid-inner">
+                <div class="person-polaroid-photo">
+                    <img src="assets/foto-pria.jpg" alt="Foto romeo" loading="lazy" decoding="async">
+                </div>
+                <div class="person-polaroid-name letter-reveal">romeo</div>
+            </div>
+        </div>
+
+        <p class="person-parent">
+            Putra dari Bpk. Nama Ayah &amp; Ibu Nama Ibu
+        </p>
+        <p class="person-address">
+            Alamat kediaman mempelai
+        </p>
+
+        <a href="#" class="instagram-button orange-instagram" target="_blank">
+            ◎ &nbsp; INSTAGRAM
+        </a>
+    </div>
+
+</div>
+
+<!-- =================================================
+     GALERI
+================================================== -->
+
+<div class="gallery-section">
+
+    <div class="gallery-deco gallery-flower-left">✿</div>
+    <div class="gallery-deco gallery-flower-right">✿</div>
+
+    <div class="gallery-sparkle gs1">✦</div>
+    <div class="gallery-sparkle gs2">✦</div>
+    <div class="gallery-sparkle gs3">✦</div>
+
+
+    <h2 class="gallery-title letter-reveal">
+        CERITA KITA
+    </h2>
+
+    <p class="gallery-subtitle">
+        sedikit cerita dalam bingkai cinta
+    </p>
+
+
+    <!-- SLIDER -->
+
+    <div class="gallery-slider">
+
+        <div class="gallery-track" id="galleryTrack">
+
+            <div class="gallery-slide active">
+                <img
+                    src="assets/galeri1.jpg"
+                    alt="Foto juliet dan romeo"
+                    loading="eager"
+                    decoding="async"
+                >
+            
+                <div class="gallery-frame-hearts" aria-hidden="true">
+                    <span class="gallery-heart heart-pink">♥</span>
+                    <span class="gallery-heart heart-green">♥</span>
+                </div>
+            </div>
+
+            <div class="gallery-slide">
+                <img
+                    src="assets/galeri2.jpg"
+                    alt="Foto juliet dan romeo"
+                    loading="lazy"
+                    decoding="async"
+                >
+            
+                <div class="gallery-frame-hearts" aria-hidden="true">
+                    <span class="gallery-heart heart-blue">♥</span>
+                    <span class="gallery-heart heart-yellow">♥</span>
+                </div>
+            </div>
+
+            <div class="gallery-slide">
+                <img
+                    src="assets/galeri3.jpg"
+                    alt="Foto juliet dan romeo"
+                    loading="lazy"
+                    decoding="async"
+                >
+            
+                <div class="gallery-frame-hearts" aria-hidden="true">
+                    <span class="gallery-heart heart-purple">♥</span>
+                    <span class="gallery-heart heart-orange">♥</span>
+                </div>
+            </div>
+
+            <div class="gallery-slide">
+                <img
+                    src="assets/galeri4.jpg"
+                    alt="Foto juliet dan romeo"
+                    loading="lazy"
+                    decoding="async"
+                >
+            
+                <div class="gallery-frame-hearts" aria-hidden="true">
+                    <span class="gallery-heart heart-yellow">♥</span>
+                    <span class="gallery-heart heart-pink">♥</span>
+                </div>
+            </div>
+
+            <div class="gallery-slide">
+                <img
+                    src="assets/galeri5.jpg"
+                    alt="Foto juliet dan romeo"
+                    loading="lazy"
+                    decoding="async"
+                >
+            
+                <div class="gallery-frame-hearts" aria-hidden="true">
+                    <span class="gallery-heart heart-green">♥</span>
+                    <span class="gallery-heart heart-blue">♥</span>
+                </div>
+            </div>
+
+            <div class="gallery-slide">
+                <img
+                    src="assets/galeri6.jpg"
+                    alt="Foto juliet dan romeo"
+                    loading="lazy"
+                    decoding="async"
+                >
+            
+                <div class="gallery-frame-hearts" aria-hidden="true">
+                    <span class="gallery-heart heart-orange">♥</span>
+                    <span class="gallery-heart heart-purple">♥</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- TOMBOL -->
+
+        <button
+            class="gallery-arrow gallery-prev"
+            id="galleryPrev"
+            type="button"
+        >
+            ‹
+        </button>
+
+        <button
+            class="gallery-arrow gallery-next"
+            id="galleryNext"
+            type="button"
+        >
+            ›
+        </button>
+
+    </div>
+
+
+    <!-- INDIKATOR -->
+
+    <div class="gallery-dots" id="galleryDots">
+
+        <button
+            type="button"
+            class="gallery-dot active"
+            data-slide="0"
+        ></button>
+
+        <button
+            type="button"
+            class="gallery-dot"
+            data-slide="1"
+        ></button>
+
+        <button
+            type="button"
+            class="gallery-dot"
+            data-slide="2"
+        ></button>
+
+        <button
+            type="button"
+            class="gallery-dot"
+            data-slide="3"
+        ></button>
+
+        <button
+            type="button"
+            class="gallery-dot"
+            data-slide="4"
+        ></button>
+
+        <button
+            type="button"
+            class="gallery-dot"
+            data-slide="5"
+        ></button>
+
+    </div>
+
+
+    <div class="gallery-caption">
+        juliet &amp; romeo
+    </div>
+
+    <!-- FOTO KENANGAN TAMBAHAN -->
+    <div class="gallery-more-title letter-reveal">
+        FOTO KENANGAN LAINNYA
+    </div>
+    <div class="gallery-more-grid" aria-label="Foto kenangan tambahan">
+        <button class="gallery-more-item" type="button" data-gallery-preview="assets/galeri3.jpg" aria-label="Lihat foto kenangan 1">
+            <img src="assets/galeri3.jpg" alt="Foto kenangan tambahan 1" loading="lazy">
+        </button>
+        <button class="gallery-more-item" type="button" data-gallery-preview="assets/galeri4.jpg" aria-label="Lihat foto kenangan 2">
+            <img src="assets/galeri4.jpg" alt="Foto kenangan tambahan 2" loading="lazy">
+        </button>
+        <button class="gallery-more-item" type="button" data-gallery-preview="assets/galeri5.jpg" aria-label="Lihat foto kenangan 3">
+            <img src="assets/galeri5.jpg" alt="Foto kenangan tambahan 3" loading="lazy">
+        </button>
+        <button class="gallery-more-item" type="button" data-gallery-preview="assets/galeri6.jpg" aria-label="Lihat foto kenangan 4">
+            <img src="assets/galeri6.jpg" alt="Foto kenangan tambahan 4" loading="lazy">
+        </button>
+        <button class="gallery-more-item" type="button" data-gallery-preview="assets/galeri1.jpg" aria-label="Lihat foto kenangan 5">
+            <img src="assets/galeri1.jpg" alt="Foto kenangan tambahan 5" loading="lazy">
+        </button>
+        <button class="gallery-more-item gallery-more-landscape" type="button" data-gallery-preview="assets/galeri2.jpg" aria-label="Lihat foto kenangan terakhir">
+            <img src="assets/galeri2.jpg" alt="Foto kenangan terakhir" loading="lazy">
+        </button>
+    </div>
+
+</div>
+
+<!-- LIGHTBOX GALERI -->
+<div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true">
+    <button class="gallery-lightbox-close" id="galleryLightboxClose" type="button" aria-label="Tutup preview">&times;</button>
+    <button class="gallery-lightbox-arrow gallery-lightbox-prev" id="galleryLightboxPrev" type="button" aria-label="Foto sebelumnya">‹</button>
+    <div class="gallery-lightbox-content">
+        <img id="galleryLightboxImage" src="" alt="Preview foto galeri">
+        <div class="gallery-lightbox-counter" id="galleryLightboxCounter">1 / 6</div>
+    </div>
+    <button class="gallery-lightbox-arrow gallery-lightbox-next" id="galleryLightboxNext" type="button" aria-label="Foto berikutnya">›</button>
+</div>
+
+<!-- =================================================
+     DRESS CODE
+================================================== -->
+
+<div class="dresscode-section">
+
+    <!-- dekorasi background -->
+    <div class="dress-deco dress-flower-1">✿</div>
+    <div class="dress-deco dress-flower-2">✿</div>
+
+    <div class="dress-sparkle dress-sparkle-1">✦</div>
+    <div class="dress-sparkle dress-sparkle-2">✦</div>
+    <div class="dress-sparkle dress-sparkle-3">✦</div>
+
+    <div class="dress-circle circle-1"></div>
+    <div class="dress-circle circle-2"></div>
+
+
+    <div class="dresscode-content">
+
+        <div class="dress-small-title">
+            biar makin kompak
+        </div>
+
+        <h2 class="dresscode-title">
+            Dress code!
+        </h2>
+
+
+        <div class="dress-subtitle">
+            pakai yang
+        </div>
+
+
+        <div class="dress-main">
+            Smart Casual
+        </div>
+
+
+        <div class="dress-color-title">
+            warna-warna andalannya
+        </div>
+
+
+        <!-- WARNA -->
+        <div class="dress-colors">
+
+            <span class="dress-color color-cream"></span>
+
+            <span class="dress-color color-pink"></span>
+
+            <span class="dress-color color-peach"></span>
+
+            <span class="dress-color color-yellow"></span>
+
+            <span class="dress-color color-sage"></span>
+
+        </div>
+
+
+        <p class="dress-description">
+
+            Pakai warna lembut, hindari putih bersih
+            biar gak bentrok sama pengantin.
+
+            Nyaman jadi prioritas.
+
+        </p>
+
+
+        <div class="dress-heart">
+            ♥
+        </div>
+
+    </div>
+
+</div>
+
+    
+</section>
+
+    <!-- =================================================
+     KADO
+================================================== -->
+
+<section
+    class="section gift-section"
+    id="kado"
+>
+
+    <!-- =========================================
+         DEKORASI BACKGROUND
+    ========================================== -->
+
+    <div class="gift-flower gift-flower-1">
+        ✿
+    </div>
+
+    <div class="gift-flower gift-flower-2">
+        ✿
+    </div>
+
+    <div class="gift-sparkle gift-sparkle-1">
+        ✦
+    </div>
+
+    <div class="gift-sparkle gift-sparkle-2">
+        ✦
+    </div>
+
+    <div class="gift-sparkle gift-sparkle-3">
+        ✦
+    </div>
+
+    <div class="gift-heart gift-heart-1">
+        ♥
+    </div>
+
+    <div class="gift-heart gift-heart-2">
+        ♥
+    </div>
+
+    <div class="gift-circle gift-circle-1"></div>
+    <div class="gift-circle gift-circle-2"></div>
+
+
+    <!-- =========================================
+         KONTEN
+    ========================================== -->
+
+    <div class="gift-content">
+
+
+
+
+        <h2 class="gift-title">
+            KIRIM KADO
+        </h2>
+
+
+        <div class="gift-icon">
+            🎁
+        </div>
+
+
+        <p class="gift-description">
+
+            Kami nggak bikin wishlist —
+            kehadiranmu sudah lebih dari cukup.
+
+            Tapi kalau mau menitipkan tanda kasih,
+            boleh banget ikut mengisi tabungan
+            keluarga kecil kami.
+
+        </p>
+
+
+        <!-- TOMBOL -->
+
+        <button
+            class="gift-button"
+            id="openGiftButton"
+            type="button"
+        >
+
+            <span class="gift-button-icon">
+                ♡
+            </span>
+
+            <span>
+                Kirim Kado
+            </span>
+
+        </button>
+
+
+        <div class="gift-note">
+            kehadiranmu adalah hadiah terindah
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- =================================================
+         DOA
+    ================================================== -->
+
+    <section class="section doa-section" id="doa">
+
+        <div class="doa-deco doa-flower doa-flower-1">✿</div>
+        <div class="doa-deco doa-flower doa-flower-2">✿</div>
+        <div class="doa-deco doa-flower doa-flower-3">✿</div>
+        <div class="doa-deco doa-sparkle doa-sparkle-1">✦</div>
+        <div class="doa-deco doa-sparkle doa-sparkle-2">✦</div>
+        <div class="doa-deco doa-sparkle doa-sparkle-3">✦</div>
+        <div class="doa-orb doa-orb-1"></div>
+        <div class="doa-orb doa-orb-2"></div>
+        <div class="doa-heart doa-heart-1">♥</div>
+        <div class="doa-heart doa-heart-2">♥</div>
+
+        <div class="doa-content">
+            <div class="doa-small-title">sedikit kata, banyak doa</div>
+            <h2 class="doa-title">PESAN &amp; DOA</h2>
+            <p class="doa-subtitle">
+                Tinggalkan ucapan dan doa terbaik untuk perjalanan cinta kami.
+            </p>
+
+            <div class="doa-message-list" id="doaMessageList">
+                <article class="doa-wish-card">
+                    <div class="doa-wish-avatar">A</div>
+                    <div class="doa-wish-content">
+                        <div class="doa-wish-head">
+                            <strong>Andi &amp; Keluarga</strong>
+                            <span class="doa-wish-status">Hadir</span>
+                        </div>
+                        <p>Selamat menempuh hidup baru. Semoga selalu bahagia, langgeng, dan penuh keberkahan. ❤️</p>
+                        <small>2 tamu</small>
+                    </div>
+                </article>
+
+                <article class="doa-wish-card">
+                    <div class="doa-wish-avatar doa-avatar-orange">S</div>
+                    <div class="doa-wish-content">
+                        <div class="doa-wish-head">
+                            <strong>Siti</strong>
+                            <span class="doa-wish-status">Hadir</span>
+                        </div>
+                        <p>Barakallahu lakuma. Semoga menjadi keluarga yang sakinah, mawaddah, warahmah. 🌷</p>
+                        <small>1 tamu</small>
+                    </div>
+                </article>
+
+                <div class="doa-empty" id="doaEmptyMessage" style="display:none">Belum ada pesan baru.</div>
+            </div>
+
+            <button class="doa-write-button" id="openDoaButton" type="button">
+                <span>✎</span>
+                TULIS UCAPAN
+            </button>
+
+            <div class="doa-note">dengan cinta, kami menunggu doa baikmu</div>
+        </div>
+    </section>
+
+
+
+    <!-- =================================================
+         SAMPAI KETEMU
+    ================================================== -->
+
+    <section
+        class="section ketemu-section"
+        id="hadir"
+    >
+
+        <!-- DEKORASI BACKGROUND -->
+        <div class="ketemu-deco ketemu-flower ketemu-flower-1">✿</div>
+        <div class="ketemu-deco ketemu-flower ketemu-flower-2">✿</div>
+        <div class="ketemu-deco ketemu-sparkle ketemu-sparkle-1">✦</div>
+        <div class="ketemu-deco ketemu-sparkle ketemu-sparkle-2">✦</div>
+        <div class="ketemu-orb ketemu-orb-1"></div>
+        <div class="ketemu-orb ketemu-orb-2"></div>
+
+        <div class="ketemu-content">
+            <div class="ketemu-small-title">hari yang kami tunggu</div>
+
+            <h2 class="ketemu-title">
+                SAMPAI KETEMU
+                <span>TINGGAL HITUNG HARI ♡</span>
+            </h2>
+
+            <p class="ketemu-subtitle">
+                Biar kursi &amp; porsimu kami siapkan, kabari
+                kehadiranmu ya!
+            </p>
+
+            <div class="countdown-box" aria-label="Hitung mundur menuju hari pernikahan">
+                <div class="countdown-item">
+                    <strong id="countDays">00</strong>
+                    <span>hari</span>
+                </div>
+                <div class="countdown-item">
+                    <strong id="countHours">00</strong>
+                    <span>jam</span>
+                </div>
+                <div class="countdown-item">
+                    <strong id="countMinutes">00</strong>
+                    <span>menit</span>
+                </div>
+                <div class="countdown-item">
+                    <strong id="countSeconds">00</strong>
+                    <span>detik</span>
+                </div>
+            </div>
+
+            <div class="ketemu-date-card">
+                <span class="ketemu-date-icon">♡</span>
+                <div>
+                    <strong>8 NOVEMBER 2026</strong>
+                    <small>Akad 08.00 WIB · Resepsi 11.00 WIB</small>
+                </div>
+            </div>
+
+            <div class="ketemu-wave">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+
+            <p class="ketemu-message">
+                Kehadiranmu, tawamu, dan doa-doa baik adalah hadiah terbaik.
+                Sampai ketemu di hari bahagia kami! ✨
+            </p>
+
+            <div class="ketemu-names">
+                juliet <span>&amp;</span> BIMASENA
+            </div>
+
+            <div class="ketemu-love">♥</div>
+        </div>
+
+    </section>
+
+    <!-- WATERMARK PEMBUAT UNDANGAN -->
+<div class="creator-watermark">
+    <div class="creator-text">
+        Made with love by <span>Pakseh</span>
+    </div>
+
+    <div class="creator-links">
+
+        <!-- WhatsApp -->
+        <a
+            href="https://wa.me/6285156028912"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="creator-link whatsapp-link"
+            aria-label="WhatsApp"
+        >
+            <svg viewBox="0 0 24 24">
+                <path d="M20.52 3.48A11.84 11.84 0 0 0 12.08 0C5.52 0 .18 5.34.18 11.9c0 2.1.55 4.15 1.6 5.96L.08 24l6.28-1.65a11.88 11.88 0 0 0 5.72 1.46h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.47-8.43ZM12.09 21.8a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.73.98 1-3.64-.23-.37a9.87 9.87 0 1 1 8.35 4.62Zm5.42-7.39c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.5 1.7.64.71.23 1.35.2 1.86.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+            </svg>
+        </a>
+
+        <!-- Website -->
+        <a
+            href="https://pakseh.web.id"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="creator-link website-link"
+            aria-label="Website"
+        >
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="9.5"></circle>
+                <path d="M2.5 12h19"></path>
+                <path d="M12 2.5c2.7 2.55 4.05 5.72 4.05 9.5S14.7 18.95 12 21.5c-2.7-2.55-4.05-5.72-4.05-9.5S9.3 5.05 12 2.5Z"></path>
+            </svg>
+        </a>
+
+    </div>
+</div>
+
+</div>
+
+
+
+<!-- POPUP TULIS UCAPAN -->
+<div class="doa-modal" id="doaModal" aria-hidden="true">
+    <div class="doa-modal-overlay" id="doaModalOverlay"></div>
+    <div class="doa-modal-box" role="dialog" aria-modal="true" aria-labelledby="doaModalTitle">
+        <button class="doa-modal-close" id="closeDoaModal" type="button" aria-label="Tutup">×</button>
+        <div class="doa-modal-flower">✿</div>
+        <div class="doa-modal-small">untuk kedua mempelai</div>
+        <h3 class="doa-modal-title" id="doaModalTitle">Tulis Ucapan</h3>
+        <p class="doa-modal-subtitle">Sampaikan doa dan pesan terbaikmu untuk kami.</p>
+
+        <form id="doaForm" class="doa-form">
+            <label>
+                <span>Nama</span>
+                <input id="doaName" name="nama" type="text" maxlength="50" placeholder="Nama kamu" autocomplete="name" required>
+            </label>
+
+            <label>
+                <span>Kehadiran</span>
+                <select id="doaAttendance" name="kehadiran">
+                    <option value="Hadir">Hadir</option>
+                    <option value="Tidak Hadir">Tidak Hadir</option>
+                    <option value="Masih Ragu">Masih Ragu</option>
+                </select>
+            </label>
+
+            <label>
+                <span>Jumlah Tamu</span>
+                <select id="doaGuests" name="jumlah">
+                    <option value="1">1 Tamu</option>
+                    <option value="2">2 Tamu</option>
+                    <option value="3">3 Tamu</option>
+                    <option value="4">4 Tamu</option>
+                </select>
+            </label>
+
+            <label>
+                <span>Pesan &amp; Doa</span>
+                <textarea id="doaMessage" name="pesan" rows="5" maxlength="300" placeholder="Tulis ucapan dan doa terbaikmu..." required></textarea>
+                <small class="doa-counter" id="doaCharCount">0/300</small>
+            </label>
+
+            <button class="doa-submit-button" type="submit">
+                KIRIM UCAPAN <span>♥</span>
+            </button>
+            <div class="doa-success" id="doaSuccess">✓ Ucapan berhasil ditambahkan ❤️</div>
+        </form>
+    </div>
+</div>
+
+
+<!-- =================================================
+     POPUP KADO
+================================================== -->
+
+<div
+    class="gift-modal"
+    id="giftModal"
+>
+
+    <div
+        class="gift-modal-overlay"
+        id="giftModalOverlay"
+    ></div>
+
+
+    <div
+        class="gift-modal-box"
+    >
+
+        <!-- TOMBOL CLOSE -->
+
+        <button
+            class="gift-modal-close"
+            id="closeGiftModal"
+            type="button"
+        >
+            ×
+        </button>
+
+
+        <div class="gift-modal-small">
+            tanda kasih
+        </div>
+
+
+        <h3 class="gift-modal-title">
+            Kirim Kado
+        </h3>
+
+
+        <!-- KARTU ATM -->
+
+        <div class="atm-card">
+
+            <div class="atm-top">
+
+                <span>
+                    BANK
+                </span>
+
+                <span class="atm-chip">
+                    ▰
+                </span>
+
+            </div>
+
+
+            <div class="atm-number">
+                1234 5678 9012 3456
+            </div>
+
+
+            <div class="atm-bottom">
+
+                <div>
+
+                    <small>
+                        ATAS NAMA
+                    </small>
+
+                    <strong>
+                        juliet &amp; romeo
+                    </strong>
+
+                </div>
+
+                <div class="atm-logo">
+                    BANK
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DATA REKENING -->
+
+        <div class="rekening-info">
+<div
+                class="rekening-number"
+                id="rekeningNumber"
+            >
+                1234567890123456
+            </div>
+
+            <div class="rekening-owner">
+                juliet &amp; romeo
+            </div>
+
+        </div>
+
+
+        <!-- SALIN -->
+
+        <button
+            class="copy-rekening-button"
+            id="copyRekeningButton"
+            type="button"
+        >
+
+            <span>
+                ⧉
+            </span>
+
+            SALIN NOMOR REKENING
+
+        </button>
+
+
+        <div
+            class="copy-success"
+            id="copySuccess"
+        >
+            ✓ Nomor rekening berhasil disalin ❤️
+        </div>
+
+
+        <p class="gift-modal-thanks">
+            Terima kasih atas tanda kasih dan
+            doa baik untuk keluarga kecil kami.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     TOMBOL MUSIK
+===================================================== -->
+
+<button
+    class="music-button"
+    id="musicButton"
+    type="button"
+    aria-label="Putar musik"
+>
+
+    ♪
+
+</button>
+
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<nav class="bottom-nav">
+
+
+    <a
+        href="#home"
+        class="nav-item active"
+        data-target="home"
+    >
+
+        <span class="nav-icon">
+            ⌂
+        </span>
+
+        <span>
+            AWAL
+        </span>
+
+    </a>
+
+
+    <a
+        href="#acara"
+        class="nav-item"
+        data-target="acara"
+    >
+
+        <span class="nav-icon">
+            ♧
+        </span>
+
+        <span>
+            ACARA
+        </span>
+
+    </a>
+
+
+    <a
+        href="#kado"
+        class="nav-item"
+        data-target="kado"
+    >
+
+        <span class="nav-icon">
+            🎁
+        </span>
+
+        <span>
+            KADO
+        </span>
+
+    </a>
+
+
+    <a
+        href="#doa"
+        class="nav-item"
+        data-target="doa"
+    >
+
+        <span class="nav-icon">
+            ♡
+        </span>
+
+        <span>
+            DOA
+        </span>
+
+    </a>
+
+
+    <a
+        href="#hadir"
+        class="nav-item"
+        data-target="hadir"
+    >
+
+        <span class="nav-icon">
+            ✿
+        </span>
+
+        <span>
+            KETEMU
+        </span>
+
+    </a>
+
+
+</nav>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+
+<script>
+/* =====================================================
+   POPUP KIRIM KADO — FINAL CONTROLLER
+   Tidak bergantung pada posisi .invitation
+===================================================== */
+(function () {
+    function initGiftModal() {
+        const modal = document.getElementById('giftModal');
+        const openBtn = document.getElementById('openGiftButton');
+        const closeBtn = document.getElementById('closeGiftModal');
+        const overlay = document.getElementById('giftModalOverlay');
+        const copyBtn = document.getElementById('copyRekeningButton');
+        const rekening = document.getElementById('rekeningNumber');
+        const success = document.getElementById('copySuccess');
+
+        if (!modal || !openBtn || !closeBtn || !overlay) return;
+
+        function openModal(e) {
+            if (e) e.preventDefault();
+            modal.classList.add('show');
+            document.body.classList.add('gift-modal-open');
+            closeBtn.focus({ preventScroll: true });
+        }
+
+        function closeModal() {
+            modal.classList.remove('show');
+            document.body.classList.remove('gift-modal-open');
+        }
+
+        openBtn.addEventListener('click', openModal);
+        closeBtn.addEventListener('click', closeModal);
+        overlay.addEventListener('click', closeModal);
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && modal.classList.contains('show')) {
+                closeModal();
+            }
+        });
+
+        if (copyBtn && rekening) {
+            copyBtn.addEventListener('click', async function () {
+                const text = rekening.textContent.trim().replace(/\s+/g, '');
+                let copied = false;
+
+                try {
+                    if (navigator.clipboard && window.isSecureContext) {
+                        await navigator.clipboard.writeText(text);
+                        copied = true;
+                    }
+                } catch (_) {}
+
+                if (!copied) {
+                    const area = document.createElement('textarea');
+                    area.value = text;
+                    area.setAttribute('readonly', '');
+                    area.style.position = 'fixed';
+                    area.style.opacity = '0';
+                    document.body.appendChild(area);
+                    area.select();
+                    try {
+                        copied = document.execCommand('copy');
+                    } catch (_) {}
+                    area.remove();
+                }
+
+                if (copied && success) {
+                    success.classList.add('show');
+                    copyBtn.classList.add('copied');
+                    copyBtn.innerHTML = '<span>✓</span> NOMOR BERHASIL DISALIN';
+
+                    clearTimeout(window.__giftCopyTimer);
+                    window.__giftCopyTimer = setTimeout(function () {
+                        success.classList.remove('show');
+                        copyBtn.classList.remove('copied');
+                        copyBtn.innerHTML = '<span>⧉</span> SALIN NOMOR REKENING';
+                    }, 2200);
+                }
+            });
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initGiftModal);
+    } else {
+        initGiftModal();
+    }
+})();
+</script>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
