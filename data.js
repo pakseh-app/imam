@@ -17,7 +17,7 @@ window.INVITATION_DATA = {
     },
 
     groom: {
-        name: 'Imam Khanafi',
+        name: 'Imam Khanafi',
         parents: 'Putra dari Bpk. Nama Ayah & Ibu Nama Ibu',
         address: 'Alamat kediaman mempelai',
         instagram: '#'
@@ -60,5 +60,5 @@ window.INVITATION_DATA = {
     // ─────────────────────────────────────────────────────
     // JUDUL BROWSER
     // ─────────────────────────────────────────────────────
-    pageTitle: 'Lusiyana & Imam Khanafi'
+    pageTitle: 'Lusiyana & Imam Khanafi'
 };

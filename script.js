@@ -1,5 +1,5 @@
 /* =====================================================
-   Lusiyana & Imam Khanafi — MAIN CONTROLLER
+   Lusiyana & Imam Khanafi — MAIN CONTROLLER
 ===================================================== */
 (function () {
     'use strict';
@@ -14,6 +14,8 @@
         initMusic();
         initCalendar();
         initGallery();
+        initGalleryPhotoReveal();
+        initLoveBubbles();
         initGalleryLightbox();
         initLetterReveal();
         initNavigation();
@@ -63,6 +65,15 @@
             opening.classList.add('hide');
             invitation.classList.add('show');
             invitation.classList.add('visible');
+            const homeSection = $('home');
+            if (homeSection) {
+                homeSection.classList.remove('opening-active');
+                void homeSection.offsetWidth;
+                homeSection.classList.add('opening-active');
+                setTimeout(function () {
+                    homeSection.classList.remove('opening-active');
+                }, 2100);
+            }
             document.body.classList.remove('cover-active');
 
             setTimeout(function () {
@@ -294,6 +305,15 @@
                 const active = i === current;
                 slide.classList.toggle('active', active);
                 slide.setAttribute('aria-hidden', active ? 'false' : 'true');
+
+                // Restart animasi masuk setiap kali foto aktif berubah.
+                if (active) {
+                    slide.classList.remove('photo-enter');
+                    void slide.offsetWidth;
+                    slide.classList.add('photo-enter');
+                } else {
+                    slide.classList.remove('photo-enter');
+                }
             });
             dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
         }
@@ -318,6 +338,82 @@
 
         show(0);
         rebuild();
+    }
+
+    /* =====================================================
+       GALLERY PHOTO ENTRY — FOTO KENANGAN
+       Foto tambahan muncul satu per satu ketika masuk viewport.
+    ===================================================== */
+    function initGalleryPhotoReveal() {
+        const items = qsa('.gallery-more-item');
+        if (!items.length) return;
+
+        items.forEach((item, index) => {
+            item.style.setProperty('--photo-delay', `${Math.min(index * 90, 450)}ms`);
+        });
+
+        const reveal = (item) => {
+            if (item.classList.contains('photo-grid-visible')) return;
+            item.classList.add('photo-grid-visible');
+        };
+
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        reveal(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.08, rootMargin: '0px 0px -8% 0px' });
+            items.forEach(item => observer.observe(item));
+        } else {
+            items.forEach(reveal);
+        }
+    }
+
+    /* =====================================================
+       LOVE BUBBLES — ringan, hanya CSS animation + DOM kecil
+    ===================================================== */
+    function initLoveBubbles() {
+        const layer = $('floatLayer');
+        const sparkleLayer = $('sparkleLayer');
+        if (!layer) return;
+
+        const isMobile = window.innerWidth < 600;
+        const heartCount = isMobile ? 24 : 34;
+        const sparkleCount = isMobile ? 6 : 10;
+
+        for (let i = 0; i < heartCount; i++) {
+            const heart = document.createElement('div');
+            heart.className = 'float-heart';
+            if (i % 3 === 0) heart.classList.add('bubble');
+
+            const size = i % 3 === 0
+                ? 12 + Math.random() * 22
+                : 14 + Math.random() * 22;
+
+            heart.style.setProperty('--left', `${Math.random() * 100}%`);
+            heart.style.setProperty('--size', `${size}px`);
+            heart.style.setProperty('--duration', `${10 + Math.random() * 8}s`);
+            heart.style.setProperty('--delay', `${-Math.random() * 12}s`);
+            heart.style.setProperty('--drift', `${-80 + Math.random() * 160}px`);
+            heart.style.setProperty('--opacity', `${0.20 + Math.random() * 0.38}`);
+            layer.appendChild(heart);
+        }
+
+        if (!sparkleLayer) return;
+        for (let i = 0; i < sparkleCount; i++) {
+            const sparkle = document.createElement('div');
+            sparkle.className = 'sparkle';
+            sparkle.style.setProperty('--left', `${Math.random() * 100}%`);
+            sparkle.style.setProperty('--top', `${Math.random() * 100}%`);
+            sparkle.style.setProperty('--size', `${4 + Math.random() * 6}px`);
+            sparkle.style.setProperty('--duration', `${2.5 + Math.random() * 2}s`);
+            sparkle.style.setProperty('--delay', `${-Math.random() * 4}s`);
+            sparkle.style.setProperty('--opacity', `${.25 + Math.random() * .45}`);
+            sparkleLayer.appendChild(sparkle);
+        }
     }
 
     /* =====================================================
@@ -422,7 +518,7 @@
             'SCRIPT','STYLE','NOSCRIPT','SVG','PATH','IMG','INPUT','TEXTAREA',
             'SELECT','OPTION','VIDEO','AUDIO','CANVAS','PRE','CODE'
         ]);
-        const skipClass = /(typing-letter|icon|fa-|material-icons|lucide|emoji|sparkle|heart-icon|nav-icon|gallery-dot|gallery-arrow)/i;
+        const skipClass = /(typing-letter|polaroid-caption|icon|fa-|material-icons|lucide|emoji|sparkle|heart-icon|nav-icon|gallery-dot|gallery-arrow)/i;
         const processed = [];
 
         const hasMeaningfulText = el => {
