@@ -31,10 +31,12 @@ CONTOH:
    event.monthYear = 'NOVEMBER 2026'
    event.fullDate = '8 NOVEMBER 2026'
    event.iso = '2026-11-08T08:00:00+07:00'
+   event.countdownTarget = '2026-10-03T09:00:00+07:00'
    event.akadTime = '08.00 WIB'
    event.receptionTime = '11.00 WIB'
 
-   Penting: nilai event.iso dipakai untuk countdown.
+   Penting: nilai event.countdownTarget dipakai untuk countdown.
+   event.iso boleh tetap dipakai untuk data tanggal lama/kompatibilitas.
 
 6. Ganti lokasi
    event.venue = 'Nama Gedung / Ballroom'

@@ -743,7 +743,7 @@
 
     /* =====================================================
        COUNTDOWN — SAMPAI KETEMU
-       Target: 8 November 2026, 08.00 WIB
+       Target diatur dari data.js -> event.countdownTarget
     ===================================================== */
     function initCountdown() {
         const days = $('countDays');
@@ -752,7 +752,8 @@
         const seconds = $('countSeconds');
         if (!days || !hours || !minutes || !seconds) return;
 
-        const targetTime = new Date((window.INVITATION_DATA?.event?.iso) || '2026-11-08T08:00:00+07:00').getTime();
+        const countdownTarget = window.INVITATION_DATA?.event?.countdownTarget || window.INVITATION_DATA?.event?.iso || '2026-10-03T09:00:00+07:00';
+        const targetTime = new Date(countdownTarget).getTime();
 
         function pad(value) {
             return String(Math.max(0, value)).padStart(2, '0');
