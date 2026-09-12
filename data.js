@@ -33,9 +33,9 @@ window.INVITATION_DATA = {
     // ─────────────────────────────────────────────────────
     event: {
     weekday: 'Sabtu-Minggu',
-    day: '04-05',
+    day: '03-04',
     monthYear: 'OKTOBER 2026',
-    fullDate: '04 OKTOBER 2026',
+    fullDate: '03 OKTOBER 2026',
 
     akadTime: '26 JUNI 2024',
     akadVenue: 'KUA Kecamatan Bringin',
