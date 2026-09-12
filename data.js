@@ -11,16 +11,16 @@ window.INVITATION_DATA = {
     // ─────────────────────────────────────────────────────
     bride: {
         name: 'Lusiyana',
-        parents: 'Putri dari Bpk. Hendra Prameswari & Ibu Ratna Dewi',
-        address: 'Alamat kediaman mempelai',
-        instagram: '#'
+        parents: 'Putri dari Bpk. Bambang Setiono & Ibu Mardiyah',
+        address: 'Dusun Glagah Ombo 09/03 Desa Sukorejo Kecamatan Suruh',
+        instagram: ''
     },
 
     groom: {
         name: 'Imam Khanafi',
-        parents: 'Putra dari Bpk. Nama Ayah & Ibu Nama Ibu',
-        address: 'Alamat kediaman mempelai',
-        instagram: '#'
+        parents: 'Putra dari Bpk. Sunaryo & Ibu Sutiah',
+        address: 'Dusun Gedad 02/06 Desa Kalikurmo Kecamatan Bringin',
+        instagram: ''
     },
 
     // ─────────────────────────────────────────────────────
@@ -32,29 +32,29 @@ window.INVITATION_DATA = {
     // ACARA
     // ─────────────────────────────────────────────────────
     event: {
-    weekday: 'SENIN',
-    day: '17',
-    monthYear: 'AGUSTUS 2026',
-    fullDate: '17 AGUSTUS 2026',
+    weekday: 'Sabtu-Minggu',
+    day: '04-05',
+    monthYear: 'OKTOBER 2026',
+    fullDate: '04 OKTOBER 2026',
 
-    akadTime: '08.00 WIB',
+    akadTime: '26 JUNI 2024',
     akadVenue: 'KUA Kecamatan Bringin',
-    akadAddress: 'Jl. Raya Bringin No. 10',
-    akadMapUrl: 'https://maps.google.com/...',
+    akadAddress: 'Bringin, Kec. Bringin, Kabupaten Semarang, Jawa Tengah 50772',
+    akadMapUrl: 'https://maps.app.goo.gl/PiCq7Ngi9By7ocUm9',
 
-    receptionTime: '11.00 WIB',
-    receptionVenue: 'Rumah Mempelai Wanita',
-    receptionAddress: 'Desa Bringin, Kecamatan Bringin',
-    receptionMapUrl: 'https://maps.google.com/...'
+    receptionTime: '09:00 Wib-selesai',
+    receptionVenue: 'Rumah Mempelai Pria',
+    receptionAddress: 'Dusun Gedad 02/06 Desa Kalikurmo Kecamatan Bringin',
+    receptionMapUrl: 'https://maps.app.goo.gl/zyocWZtEstdWUgML8'
 },
 
     // ─────────────────────────────────────────────────────
     // KADO / REKENING
     // ─────────────────────────────────────────────────────
     gift: {
-        bank: 'DANA',
-        accountNumber: '085156028912',
-        owner: 'Pakseh'
+        bank: 'BCA',
+        accountNumber: '3930693463',
+        owner: 'IMAM KHANAFI'
     },
 
     // ─────────────────────────────────────────────────────
