@@ -87,7 +87,7 @@
             const musicButton = $('musicButton');
             if (music) {
                 music.play().then(function () {
-                    if (musicButton) musicButton.classList.add('playing');
+                    if (musicButton) { musicButton.classList.add('playing'); musicButton.setAttribute('aria-pressed', 'true'); }
                 }).catch(function () {
                     // Autoplay may be blocked by the browser.
                 });
@@ -224,11 +224,13 @@
                 ensureMusicSource();
                 music.play().then(function () {
                     button.classList.add('playing');
+                    button.setAttribute('aria-pressed', 'true');
                     button.textContent = '♫';
                 }).catch(function () {});
             } else {
                 music.pause();
                 button.classList.remove('playing');
+                button.setAttribute('aria-pressed', 'false');
                 button.textContent = '♪';
             }
         });
