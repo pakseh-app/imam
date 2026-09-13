@@ -11,6 +11,7 @@ window.INVITATION_DATA = {
     // ─────────────────────────────────────────────────────
     bride: {
         name: 'Lusiyana Safara',
+        shortName: 'Lusiyana',
         parents: 'Putri dari Bpk. Bambang Setiono & Ibu Mardiyah',
         address: 'Dusun Glagah Ombo 09/03 Desa Sukorejo Kecamatan Suruh',
         instagram: ''
@@ -18,6 +19,7 @@ window.INVITATION_DATA = {
 
     groom: {
         name: 'Imam Khanafi',
+        shortName: 'Imam',
         parents: 'Putra dari Bpk. Sunaryo & Ibu Sutiah',
         address: 'Dusun Gedad 02/06 Desa Kalikurmo Kecamatan Bringin',
         instagram: ''

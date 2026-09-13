@@ -9761,56 +9761,56 @@ body.gallery-lock {
    Nama panjang tetap rapi dan tidak terdorong keluar layar.
 ===================================================== */
 .home-couple-names {
-    width: min(92vw, 390px);
+    width: min(88vw, 390px);
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    gap: 7px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    justify-items: center;
+    column-gap: 8px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .home-couple-names > span {
     min-width: 0;
-    max-width: 46%;
-    flex: 1 1 0;
+    width: 100%;
+    max-width: none;
     text-align: center;
     white-space: normal;
-    overflow-wrap: anywhere;
+    overflow-wrap: normal;
     word-break: normal;
-    line-height: 1.05;
+    line-height: 1.08;
 }
 
 .home-couple-names > strong {
-    flex: 0 0 auto;
     white-space: nowrap;
     line-height: 1;
+    margin: 0;
 }
 
 @media (max-width: 480px) {
     .home-couple-names {
-        width: min(94vw, 380px);
-        font-size: 24px;
-        letter-spacing: 1.2px;
-    }
-    .home-couple-names > span {
-        max-width: 44%;
+        width: min(90vw, 380px);
+        column-gap: 6px;
+        font-size: 23px;
+        letter-spacing: 1px;
     }
     .home-couple-names > strong {
-        font-size: 22px;
+        font-size: 21px;
     }
 }
 
 @media (max-width: 360px) {
     .home-couple-names {
-        width: 94vw;
-        gap: 5px;
-        font-size: 21px;
-        letter-spacing: .8px;
-    }
-    .home-couple-names > span {
-        max-width: 45%;
+        width: 92vw;
+        column-gap: 4px;
+        font-size: 20px;
+        letter-spacing: .7px;
     }
     .home-couple-names > strong {
-        font-size: 20px;
+        font-size: 19px;
     }
 }

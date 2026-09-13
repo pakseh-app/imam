@@ -127,8 +127,8 @@
         // Foto + nama di halaman home
         const homeCaptions = qsa('.polaroid-caption');
         const homeNames = qsa('.home-couple-names span');
-        if (homeCaptions[0] && groom.name) homeCaptions[0].textContent = groom.name;
-        if (homeCaptions[1] && bride.name) homeCaptions[1].textContent = bride.name;
+        if (homeCaptions[0] && groom.name) homeCaptions[0].textContent = groom.shortName || groom.name;
+        if (homeCaptions[1] && bride.name) homeCaptions[1].textContent = bride.shortName || bride.name;
         if (homeNames[0] && bride.name) homeNames[0].textContent = bride.name;
         if (homeNames[1] && groom.name) homeNames[1].textContent = groom.name;
 
@@ -141,7 +141,7 @@
             const address = qs('.person-address', brideCard);
             const ig = qs('.instagram-button', brideCard);
             const img = qs('img', brideCard);
-            if (name && bride.name) name.textContent = bride.name;
+            if (name && bride.name) name.textContent = bride.shortName || bride.name;
             if (parent && bride.parents) parent.textContent = bride.parents;
             if (address && bride.address) address.textContent = bride.address;
             if (ig && bride.instagram) ig.href = bride.instagram;
@@ -153,7 +153,7 @@
             const address = qs('.person-address', groomCard);
             const ig = qs('.instagram-button', groomCard);
             const img = qs('img', groomCard);
-            if (name && groom.name) name.textContent = groom.name;
+            if (name && groom.name) name.textContent = groom.shortName || groom.name;
             if (parent && groom.parents) parent.textContent = groom.parents;
             if (address && groom.address) address.textContent = groom.address;
             if (ig && groom.instagram) ig.href = groom.instagram;
