@@ -520,7 +520,7 @@
             'SCRIPT','STYLE','NOSCRIPT','SVG','PATH','IMG','INPUT','TEXTAREA',
             'SELECT','OPTION','VIDEO','AUDIO','CANVAS','PRE','CODE'
         ]);
-        const skipClass = /(typing-letter|polaroid-caption|icon|fa-|material-icons|lucide|emoji|sparkle|heart-icon|nav-icon|gallery-dot|gallery-arrow)/i;
+        const skipClass = /(typing-letter|polaroid-caption|home-couple-names|icon|fa-|material-icons|lucide|emoji|sparkle|heart-icon|nav-icon|gallery-dot|gallery-arrow)/i;
         const processed = [];
 
         const hasMeaningfulText = el => {

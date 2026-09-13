@@ -9755,3 +9755,62 @@ body.gallery-lock {
 /* Love bubble tetap di depan foto, tetapi navbar selalu di atasnya. */
 .float-layer { z-index: 110 !important; }
 .sparkle-layer { z-index: 109 !important; }
+
+/* =====================================================
+   FIX NAMA PENGANTIN — RESPONSIVE MOBILE
+   Nama panjang tetap rapi dan tidak terdorong keluar layar.
+===================================================== */
+.home-couple-names {
+    width: min(92vw, 390px);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 7px;
+    box-sizing: border-box;
+}
+
+.home-couple-names > span {
+    min-width: 0;
+    max-width: 46%;
+    flex: 1 1 0;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    line-height: 1.05;
+}
+
+.home-couple-names > strong {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+@media (max-width: 480px) {
+    .home-couple-names {
+        width: min(94vw, 380px);
+        font-size: 24px;
+        letter-spacing: 1.2px;
+    }
+    .home-couple-names > span {
+        max-width: 44%;
+    }
+    .home-couple-names > strong {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 360px) {
+    .home-couple-names {
+        width: 94vw;
+        gap: 5px;
+        font-size: 21px;
+        letter-spacing: .8px;
+    }
+    .home-couple-names > span {
+        max-width: 45%;
+    }
+    .home-couple-names > strong {
+        font-size: 20px;
+    }
+}
