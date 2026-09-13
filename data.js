@@ -10,7 +10,7 @@ window.INVITATION_DATA = {
     // PENGANTIN
     // ─────────────────────────────────────────────────────
     bride: {
-        name: 'Lusiyana',
+        name: 'Lusiyana Safara',
         parents: 'Putri dari Bpk. Bambang Setiono & Ibu Mardiyah',
         address: 'Dusun Glagah Ombo 09/03 Desa Sukorejo Kecamatan Suruh',
         instagram: ''
@@ -68,5 +68,5 @@ window.INVITATION_DATA = {
     // ─────────────────────────────────────────────────────
     // JUDUL BROWSER
     // ─────────────────────────────────────────────────────
-    pageTitle: 'Lusiyana & Imam Khanafi'
+    pageTitle: 'Lusiyana Safara & Imam Khanafi'
 };
